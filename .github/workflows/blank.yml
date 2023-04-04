@@ -27,5 +27,8 @@ jobs:
 
       - name: Execute my code
         run: |
-          echo Hello
-          echo World
+          terraform init
+
+      - name: Execute my code
+        run: |
+          terraform validate
