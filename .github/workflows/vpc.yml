@@ -1,3 +1,8 @@
+env:
+  action: destroy
+
+
+
 
 
 name: vpc_deployer
@@ -43,4 +48,4 @@ jobs:
       - name: apply
         working-directory: vpc
         run: |
-          terraform apply  -auto-approve    
+          terraform ${{ env.action }}  -auto-approve    
